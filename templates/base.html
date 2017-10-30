@@ -5,12 +5,20 @@
         <style>.error{
             color: red;
         }
+        .post-author {
+    font-style: italic;
+    font-size: 12px;
+}
+
         </style>
     </head>
 <body>
     <div>
-        <a href='/blog'>Main Page</a>
+        <a href='/login'>Log in</a>
+        <a href='/blog'>All Posts</a>
+        <a href='/'>All Users</a>
         <a href='/newpost'>Add Blog Post</a>
+        <a href='/logout'>Log out</a>
     </div>
 
         {% with messages = get_flashed_messages(with_categories=True) %}
