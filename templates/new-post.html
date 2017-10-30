@@ -7,11 +7,11 @@
     <form method="POST", action="/newpost">
         <label for="title">Title for your new blog: </label>
     </br>
-            <input id="title" type="text" name='title' value="{{request.form['title']}}" />
+            <input id="title" type="text" name='title' value="{{blog_title}}" />
         </br>
         </br>
          <label for="body">Your new blog:</label><br>
-            <textarea id="body" name='body' value="{{request.form['body']}}" class="container"></textarea>
+            <textarea id="body" name='body' class="container">{{blog_content}}</textarea>
             <br>
             <input type="submit" value="Add Entry"/>
 
